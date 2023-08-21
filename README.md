@@ -7,21 +7,21 @@ Please download this code, complete the exercise, and then upload to your own re
 
 **The Problem**: Design a web based mailing list application. The following requirements are relatively simple, but the application should be designed so that it could be used as the basis for a more complete implementation. In other words, use sound design patterns and coding practices.
 Requirements:
-1.	Provide a simple html page in which a user can enter the following. The page merely needs to be functional and does not need to be styled in any way.
+1.	Provide a simple html page in which a user can enter the following. The page merely needs to be functional and does not need to be styled in any way. <b>(Complete)</b>
     *	Last Name
     *	First Name
-    *	Email
-2.	When the user submits this data, the input should be validated against the following rules. Any validation errors should be presented to the user.
+    *	Email 
+2.	When the user submits this data, the input should be validated against the following rules. Any validation errors should be presented to the user. <b>(Complete)</b>
     *	First Name cannot be empty
     *	Last Name cannot be empty
-    *	Email must be a valid email address.
+    *	Email must be a valid email address. 
     * If all validation succeeds, a confirmation page should be displayed which tells the user the data was received by the system.
-3.	All data submitted in this way must be saved, but only for the duration of the application’s run. It does not need to survive a restart of the application. However, in your design consider that this application will ultimately have to save this data to a persistent datastore.
-4.	A REST endpoint must be provided to retrieve all mailing list entries. This endpoint should take 2 optional parameters:
-5.	Last name- if specified, only records with this last name are returned
-6.	Ascending/Descending flag which indicates how to sort records. If not specified, default behavior is to sort ascending. Records should be sorted by last name. Where last names are equal, records should be sorted by first name.
-7.	At least one automated test must be provided which tests one of your .net components.
-8.	Security is not required for this exercise.
+3.	All data submitted in this way must be saved, but only for the duration of the application’s run. It does not need to survive a restart of the application. However, in your design consider that this application will ultimately have to save this data to a persistent datastore. <b>(Complete)</b>
+4.	A REST endpoint must be provided to retrieve all mailing list entries. This endpoint should take 2 optional parameters: <b>(Complete)</b>
+5.	Last name- if specified, only records with this last name are returned <b>(Complete)</b> - <b>get-contacts?lastName=doe</b>
+7.	Ascending/Descending flag which indicates how to sort records. If not specified, default behavior is to sort ascending. Records should be sorted by last name. Where last names are equal, records should be sorted by first name. <b>(Complete)</b> - <b>get-contacts?ascending=false</b>
+8.	At least one automated test must be provided which tests one of your .net components. <b>Completed one automated test in ContactsBusinessLogicTests</b>
+9.	Security is not required for this exercise.
 
 Optional:
 
